@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>sy8-1</title>
+
+<style>
+	body{margin:100px;}
+	
+	form{background-color:#666;
+		 margin:auto;
+		 width:600px;
+		 color:#FFF;}
+	fieldset{padding:40px;
+			 margin:20px;}
+	table{border:transparent;
+		  margin:auto;}
+	[type="text"]{
+		  width:150px;
+		  height:25px;}
+    td{padding:5px;}
+	h1{text-align:center;
+	   padding:25px;}
+	select{width:170px;
+		   height:30px;}
+	#load{width:400px;}
+	#num{width:40px;}
+	#wei{width:50px;}
+	#time{width:200;}
+	div{text-align:center;
+		margin:10px 30px;
+		padding-bottom:20px;}
+</style>
+</head>
+
+<body>
+<form>
+	<h1>增加快递信息</h1>
+	<fieldset>
+    	<legend>发货单</legend>
+    	<table border="1">
+        	<tr>
+            	<td>发货人:</td>
+                <td><input type="text"></td>
+                <td>地址:</td><td><input type="text" ></td>
+            </tr>
+        	<tr>
+            	<td>电话:</td>
+                <td><input type="text"></td>
+                <td>邮编:</td><td><input type="text" ></td>
+            </tr>
+        </table>        
+    </fieldset>
+    <fieldset>
+    	<legend>收货单</legend>
+    	<table border="1">
+        	<tr>
+            	<td>收货人:</td>
+                <td><input type="text"></td>
+                <td>地址:</td>
+                <td><input type="text" ></td>
+            </tr>
+        	<tr>
+            	<td>电话:</td>
+                <td><input type="text"></td>
+                <td>邮编:</td><td><input type="text" ></td>
+            </tr>
+            <tr>
+            	<td>地区:</td>
+                <td colspan="3"><select>
+                					<option>北京</option>
+                                    <option>亚诺尔隆德</option>
+                                    <option>天际省</option>
+                                </select>
+                </td>
+            </tr>
+            <tr>
+            	<td>包装:</td>
+                <td colspan="3"><input type="checkbox" id="box"><label for="box">纸箱</label>
+                				<input type="checkbox" id="wbox"><label for="wbox">木箱</label>
+                                <input type="checkbox" id="bag"><label for="bag">快递袋</label>
+                                <input type="checkbox" id="other"><label for="other">其他</label>
+                                
+                </td>
+            </tr>
+            <tr>
+            	<td>付款方式:</td>
+                <td colspan="3"><input type="radio" name="pay" id="cash"><label for="cash">现金</label>
+                				<input type="radio" name="pay" id="ali"><label for="ali">支付宝</label>
+                                <input type="radio" name="pay" id="wbank"><label for="wbank">网银</label>
+                                <input type="radio" name="pay" id="atm"><label for="atm">ATM</label>
+                </td>
+            </tr>
+        </table>        
+    </fieldset>
+    
+    <fieldset>
+    	<legend>货物信息</legend>
+    	<table border="1">
+        	<tr>
+            	<td >货物名称:</td>
+                <td colspan="3"><input type="text" id="load"></td>
+                
+            </tr>
+        	<tr>
+            	<td>数量:</td>
+                <td  colspan="2"><input type="text" id="num">
+                重量 :  
+                  <input type="text" id="wei">
+                  	发货时间：</td>
+                <td><input type="text" id="time"></td>
+            </tr>
+        </table>        
+    </fieldset>
+    <div>
+    <input type="button" value="确定"><input type="button" value="取消">
+    </div>
+</form>
+</body>
+</html>
